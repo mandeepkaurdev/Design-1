@@ -1,0 +1,94 @@
+body { 
+  height: 100vh;
+  background-color: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10px;
+  grid-gap: 20px;
+  margin: 5px;
+  }
+
+  header {
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'Oswald';
+    color:darkgray;
+    font-size: x-large;
+    position: initial;
+}
+
+h2 {
+    font-family: 'Sonsie One';
+    padding: 10px;
+    color: darkgray;
+    position: initial;
+}
+
+  .box{
+    display: grid;
+    grid-column: span 4;
+    height: 300px;
+    background-position: center;
+  }
+
+  .block {
+    display: none;
+}
+
+.name {
+  font-family: 'EB Garamond';
+  background-color: white;
+  height: 20px;
+  padding: 10px;
+}
+
+.one {
+  background-image: url(images/lake.jpg);
+  }
+  
+  .two {
+      background-image: url(images/empire.jpg);
+  }
+  .three {
+      background-image: url(images/person.jpg);
+  }
+  
+  .four {
+      background-image: url(images/tree.jpg);
+  }
+  
+  .five {
+      background-image: url(images/geo.jpg);
+  }
+  .six {
+      background-image: url(images/sand.jpg);
+  }
+  .seven {
+      background-image: url(images/bridge.jpg)
+  }
+  .eight {
+      background-image: url(images/lens.jpg)
+  }
+
+
+@media only screen and (min-width: 600px) {
+
+  main {
+    margin: auto;
+  }
+
+  .box {
+    grid-column: span 1;
+}
+
+  .block {
+      display: initial;
+  }
+ 
+}
